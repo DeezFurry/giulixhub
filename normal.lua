@@ -39,5 +39,11 @@ ScriptUIsTab:AddButton({
 		loadstring(game:HttpGet(("https://raw.githubusercontent.com/drakker33/rblx-decaying-winter/main/DecayingWinter.lua"), true))()
   	end    
 })
+ScriptUIsTab:AddButton({
+	Name = "Close giulixhub",
+	Callback = function()
+		OrionLib:Destroy()
+  	end    
+})
 
 OrionLib:Init()
