@@ -30,6 +30,14 @@ ScriptsUIsTab:AddButton({
 ScriptUIsTab:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
-      		print("button pressed")
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
   	end    
 })
+ScriptUIsTab:AddButton({
+	Name = "DomainX",
+	Callback = function()
+		loadstring(game:HttpGet(("https://raw.githubusercontent.com/drakker33/rblx-decaying-winter/main/DecayingWinter.lua"), true))()
+  	end    
+})
+
+OrionLib:Init()
